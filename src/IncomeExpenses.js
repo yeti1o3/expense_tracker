@@ -1,8 +1,8 @@
 import React from 'react'
-
+import './IncomeExpenses.css'
 function IncomeExpenses() {
   return (
-    <div>IncomeExpenses</div>
+    <div className='IncomeExpenses'>IncomeExpenses</div>
   )
 }
 

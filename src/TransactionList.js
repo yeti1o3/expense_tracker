@@ -1,8 +1,8 @@
 import React from 'react'
-
+import './TransactionList.css'
 function TransactionList() {
   return (
-    <div>TransactionList</div>
+    <div className='TransactionList'>TransactionList</div>
   )
 }
 
