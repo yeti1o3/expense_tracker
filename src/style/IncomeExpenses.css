@@ -1,0 +1,17 @@
+.IncomeExpenses{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+.Income{
+    background-color: rgb(90, 83, 188);
+        padding: 30px;
+        border-radius: 30px;
+}
+.Expense{
+    background-color: rgb(90, 83, 188);
+        padding: 30px;
+        border-radius: 30px;
+}

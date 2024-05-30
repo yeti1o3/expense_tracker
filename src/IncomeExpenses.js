@@ -1,9 +1,12 @@
 import React from 'react'
-import './IncomeExpenses.css'
+import './style/IncomeExpenses.css'
 function IncomeExpenses() {
   return (
-    <div className='IncomeExpenses'>IncomeExpenses</div>
-  )
+    <div className="IncomeExpenses">
+      <div className='Income'>+0</div>
+      <div className='Expense'>-0</div>
+    </div>
+  );
 }
 
 export default IncomeExpenses
