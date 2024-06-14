@@ -5,14 +5,14 @@ function TransactionList() {
   const {transactions}=useContext(GlobalContext);
   console.log(transactions);
   return (
-    <div>
+    <div className="TransactionList">
       {transactions.map((transaction) => (
-        <li key={transaction.id}>
-          {transaction.text}{" "}
+        <div className={transaction.amount>0?"transactionItem income":"transactionItem expense"} key={transaction.id}>
+          <span>{transaction.text} </span>
           <span>
             {transaction.amount < 0 ? "-" : "+"}${Math.abs(transaction.amount)}
           </span>
-        </li>
+        </div>
       ))}
     </div>
   );

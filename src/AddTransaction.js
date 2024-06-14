@@ -4,6 +4,7 @@ import { GlobalContext } from './context/GlobalState';
 function AddTransaction() {
   const [text,setText]=useState('');
   const [amount,setAmount]=useState();
+  const[close,setClose]=useState(true);
   const {addTransaction}=useContext(GlobalContext);
   function AddTransaction(){
     const newTransaction = {
@@ -13,17 +14,28 @@ function AddTransaction() {
     };
     addTransaction(newTransaction);
     setText('');
-    setAmount(0);
+    setAmount('');
+  }
+  function openAddTransaction()
+  {
+    setClose(!close);
   }
 
   return (
     <div>
-      <input value={text} onChange={(e)=>{setText(e.target.value)}} placeholder='enter note'>
+     {!close&&<div className='inputDiv'>
+      <div>
+        <input  className='input' value={text} onChange={(e)=>{setText(e.target.value)}} placeholder='enter note'>
       </input>
-      <input value={amount} onChange={(e)=>{setAmount(e.target.value)}} placeholder='enter amount'>
+      <input className='input' value={amount} onChange={(e)=>{setAmount(e.target.value)}} placeholder='enter amount'>
       </input>
-      <button onClick={AddTransaction}>ADD TRANSACTION</button>
+      </div>
+      <button onClick={AddTransaction} className='button'>ADD TRANSACTION</button>
+    </div>}
+    <button onClick={openAddTransaction} className='button'>ADD</button>
+
     </div>
+
   );
 }
 
