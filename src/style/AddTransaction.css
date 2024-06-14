@@ -4,6 +4,7 @@
     border: 2px solid black;
 }
 .button{
+    background-color: rgba(241, 160, 160, 0.96);
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left:30px ;

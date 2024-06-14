@@ -14,14 +14,16 @@
     font-size: 30px;
 }
 .total_avail{
-    border:2px solid black;
     height:10px;
     width:95%;
     border-radius:10px;
     background-color: white;
 
 }
-.spended{
+.spended-less{
     background-color: green;
 
+}
+.spended-more{
+    background-color: red;
 }
