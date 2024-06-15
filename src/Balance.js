@@ -21,7 +21,7 @@ function Balance() {
         </div>
         <div className='total_avail'>
           <div className={spend_percent<80?'spended-less':'spended-more'} style={{width:spend_percent+'%',height:"100%"}}>
-
+hahaha
           </div>
         </div>
     </div>
